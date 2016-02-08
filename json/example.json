@@ -1,0 +1,52 @@
+{
+  "bbox": [
+    16.8224041,
+    42.7657037,
+    16.8224041,
+    42.7657037
+  ],
+  "connectsWith": [
+    "1004"
+  ],
+  "description": "Ladesta Ins. (modern Lastovo) is a part of ancient Liburnia in the Adriatic Sea.",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          16.8224041,
+          42.7657037
+        ],
+        "type": "Point"
+      },
+      "id": "location-of-Ladesta-Ins",
+      "properties": {
+        "description": "Location based on OpenStreetMap",
+        "link": "http://pleiades.stoa.org/places/197342/location-of-Ladesta-Ins",
+        "location_precision": "precise",
+        "snippet": "Island, ; AD 1700 - AD 2100",
+        "title": "location of Ladesta Ins."
+      },
+      "type": "Feature"
+    }
+  ],
+  "id": "197342",
+  "names": [
+    "Ladesta"
+  ],
+  "recent_changes": [
+    {
+      "modified": "2013-05-02T18:45:23Z",
+      "principal": "jbecker"
+    },
+    {
+      "modified": "2012-02-15T02:45:59Z",
+      "principal": "admin"
+    }
+  ],
+  "reprPoint": [
+    16.8224041,
+    42.7657037
+  ],
+  "title": "Ladesta Ins.",
+  "type": "FeatureCollection",
+}
