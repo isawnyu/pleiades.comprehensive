@@ -5,10 +5,43 @@
     16.8224041,
     42.7657037
   ],
+  "citation": "Šašel Kos, M., P. Kos, R. Talbert, S. Gillies, T. Elliott, J. Becker. \"Places: 197342 (Ladesta Ins.)\". Pleiades. <http://pleiades.stoa.org/places/197342> [Accessed: February 8, 2016 4:37 am]",
   "connectsWith": [
     "1004"
   ],
+  "contributors": [
+    {
+      "name": "Jefferey Becker",
+      "username": "jbecker"
+    },
+    {
+      "name": "Sean Gillies",
+      "username": "sgillies"
+    },
+    {
+      "name": "Tom Elliott",
+      "orcid": "0000-0002-4114-6677",
+      "username": "thomase",
+      "viaf": "309842724"
+    },
+    {
+      "name": "Richard Talbert",
+      "username": "rtalbert",
+      "viaf": "59162760"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Peter Kos",
+      "viaf": "2500370"
+    },
+    {
+      "name": "Marjeta Šašel-Kos",
+      "viaf": "36949186"
+    }
+  ],
   "description": "Ladesta Ins. (modern Lastovo) is a part of ancient Liburnia in the Adriatic Sea.",
+  "details": "The Barrington Atlas Directory notes: island",
   "features": [
     {
       "geometry": {
@@ -29,18 +62,75 @@
       "type": "Feature"
     }
   ],
-  "id": "197342",
-  "names": [
-    "Ladesta"
-  ],
-  "recent_changes": [
+  "history": [
     {
+      "comment": "edited description, added references and cnnxn",
       "modified": "2013-05-02T18:45:23Z",
       "principal": "jbecker"
     },
     {
+      "comment": "Global migration and reindexing of citations and provenance, February 2012",
       "modified": "2012-02-15T02:45:59Z",
       "principal": "admin"
+    }
+  ],
+  "id": "197342",
+  "names": [
+    {
+      "association_certainty": "certain",
+      "attested": "",
+      "contributors": [
+        {
+          "name": "Sean Gillies",
+          "username": "sgillies"
+        },
+        {
+          "name": "Tom Elliott",
+          "orcid": "0000-0002-4114-6677",
+          "username": "thomase",
+          "viaf": "309842724"
+        },
+        {
+          "name": "Richard Talbert",
+          "username": "rtalbert",
+          "viaf": "59162760"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Peter Kos",
+          "viaf": "2500370"
+        },
+        {
+          "name": "Marjeta Šašel-Kos",
+          "viaf": "36949186"
+        }
+      ],
+      "description": "",
+      "during": [
+        "late-antique",
+        "roman"
+      ],
+      "end_date": "640",
+      "language": "",
+      "name_type": "geographic",
+      "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins.",
+      "romanized": "Ladesta",
+      "start_date": "-30",
+      "transcription_accuracy": "accurate",
+      "transcription_completeness": "complete",
+      "uri": "http://pleiades.stoa.org/places/197342/ladesta"
+    }
+  ],
+  "place_types": [
+    "island"
+  ],
+  "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins.",
+  "references": [
+    {
+      "detail": "BAtlas 20 D7 Ladesta Ins.",
+      "reason": "citesForInformation",
+      "work_id": "http://openlibrary.org/works/OL8327792W"
     }
   ],
   "reprPoint": [
@@ -49,4 +139,5 @@
   ],
   "title": "Ladesta Ins.",
   "type": "FeatureCollection",
+  "uri": "http://pleiades.stoa.org/places/197342"
 }
