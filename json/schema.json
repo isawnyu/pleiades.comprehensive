@@ -21,7 +21,12 @@
 					]
 				},
 				"connectsWith": { "type": "array" },
-				"features": { "type": "array" },
+				"features": { 
+					"type": "array",
+					"items": [
+						{ "$ref": "#/definitions/location" }
+					] 
+				},
 				"names": { 
 					"type": "array",
 					"items": [
@@ -75,6 +80,19 @@
 			"type": "number",
 			"maximum": 90.0,
 			"minimum": -90.0
+		},
+		"location": {
+			"description": "JSON serialization of a Pleiades 'location' object as a GeoJSON Feature.",
+			"type": "object",
+			"properties": {
+				"geometry": { "type": "object" },
+				"id": { "type": "string" },
+				"properties": { "type": "object" },
+				"type": { 
+					"type": "string",
+					"enum": ["Feature"]
+				}
+			}
 		},
 		"longitude": {
 			"type": "number",
