@@ -33,7 +33,12 @@
 		"features": { "type": "array" },
 		"history": { "type": "array" },
 		"id": { "type": "string" },
-		"names": { "type": "array" },
+		"names": { 
+			"type": "array",
+			"items": [
+				{ "$ref": "#/definitions/placename" }
+			]
+		},
 		"place_types": { "type": "array" },
 		"provenance": { "type": "string" },
 		"references": { "type": "array" },
@@ -53,6 +58,16 @@
 		"uri": { "type": "string" }
 	},
 	"definitions": {
+		"actor": {
+			"type": "object",
+			"properties": {
+				"name": { "type": "string"},
+				"username": { "type": "string"},
+				"orcid": { "type": "string"},
+				"viaf": { "type": "string"}
+			},
+			"required": [ "name" ]
+		},
 		"latitude": {
 			"type": "number",
 			"maximum": 90.0,
@@ -63,15 +78,8 @@
 			"maximum": 180.0,
 			"minimum": -180.0
 		},
-		"actor": {
-			"type": "object",
-			"properties": {
-				"name": { "type": "string"},
-				"username": { "type": "string"},
-				"orcid": { "type": "string"},
-				"viaf": { "type": "string"}
-			},
-			"required": [ "name" ]
+		"placename": {
+			"type": "object"
 		}
 	}
 }
