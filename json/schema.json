@@ -7,6 +7,7 @@
 	"properties": {
 		"bbox": {
 			"title": "bounding box",
+			"description": "southwest longitude, southwest latitude, northeast longitude, northeast latitude",
 			"type": "array",
 			"minItems": 4,
 			"maxItems": 4,
@@ -30,7 +31,8 @@
 		"place_types": { "type": "array" },
 		"provenance": { "type": "string" },
 		"references": { "type": "array" },
-		"reprPoint": { "type": "array" },
+		"reprPoint": { 
+			"type": "array" },
 		"title": { "type": "string" },
 		"type": { "type": "string" },
 		"uri": { "type": "string" }
