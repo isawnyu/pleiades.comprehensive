@@ -79,6 +79,7 @@
     {
       "association_certainty": "certain",
       "attested": "",
+      "citation": "Šašel Kos, M., P. Kos, R. Talbert, S. Gillies, T. Elliott, J. Becker. \"Name: 197342/ladesta (Ladesta)\". Pleiades. <http://pleiades.stoa.org/places/197342/ladesta> [Accessed: February 8, 2016 4:37 am]",
       "contributors": [
         {
           "name": "Sean Gillies",
@@ -107,14 +108,18 @@
         }
       ],
       "description": "",
+      "details":"",
       "during": [
         "late-antique",
         "roman"
       ],
       "end_date": "640",
+      "history": [],
+      "id": "197342/ladesta",
       "language": "",
       "name_type": "geographic",
       "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins.",
+      "references": [],
       "romanized": "Ladesta",
       "start_date": "-30",
       "transcription_accuracy": "accurate",

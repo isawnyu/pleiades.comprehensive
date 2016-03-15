@@ -3,54 +3,48 @@
 	"title": "Pleiades Project JSON Export Schema",
 	"description": "Used to validate JSON exports from the Pleiades gazetteer of ancient places",
 	"type": "object",
-	"additionalProperties": false,
-	"properties": {
-		"bbox": {
-			"title": "bounding box",
-			"description": "southwest longitude, southwest latitude, northeast longitude, northeast latitude",
-			"type": "array",
-			"minItems": 4,
-			"maxItems": 4,
-			"items": [
-				{ "$ref": "#/definitions/longitude" },
-				{ "$ref": "#/definitions/latitude" },
-				{ "$ref": "#/definitions/longitude" },
-				{ "$ref": "#/definitions/latitude" }
-			]
-		},
-		"citation": { "type": "string" },
-		"connectsWith": { "type": "array" },
-		"contributors": { "$ref": "#definitions/actors" },
-		"creators": { "$ref": "#definitions/actors" },
-		"description": { "type": "string" },
-		"details": { "type": "string" },
-		"features": { "type": "array" },
-		"history": { "type": "array" },
-		"id": { "type": "string" },
-		"names": { 
-			"type": "array",
-			"items": [
-				{ "$ref": "#/definitions/placename" }
-			]
-		},
-		"place_types": { "type": "array" },
-		"provenance": { "type": "string" },
-		"references": { "type": "array" },
-		"reprPoint": { 
-			"title": "representative point",
-			"description": "centroid or other generalized representation of features: longitude, latitude",
-			"type": "array",
-			"minItems": 2,
-			"maxItems": 2,
-			"items": [
-				{ "$ref": "#/definitions/longitude" },
-				{ "$ref": "#/definitions/latitude" }
-			]
-		},
-		"title": { "type": "string" },
-		"type": { "type": "string" },
-		"uri": { "type": "string" }
-	},
+	"allOf": [
+		{ "$ref": "#/definitions/pleiades_item" },
+		{ 
+			"properties": {
+				"bbox": {
+					"title": "bounding box",
+					"description": "southwest longitude, southwest latitude, northeast longitude, northeast latitude",
+					"type": "array",
+					"minItems": 4,
+					"maxItems": 4,
+					"items": [
+						{ "$ref": "#/definitions/longitude" },
+						{ "$ref": "#/definitions/latitude" },
+						{ "$ref": "#/definitions/longitude" },
+						{ "$ref": "#/definitions/latitude" }
+					]
+				},
+				"connectsWith": { "type": "array" },
+				"features": { "type": "array" },
+				"names": { 
+					"type": "array",
+					"items": [
+						{ "$ref": "#/definitions/placename" }
+					]
+				},
+				"place_types": { "type": "array" },
+				"reprPoint": { 
+					"title": "representative point",
+					"description": "centroid or other generalized representation of features: longitude, latitude",
+					"type": "array",
+					"minItems": 2,
+					"maxItems": 2,
+					"items": [
+						{ "$ref": "#/definitions/longitude" },
+						{ "$ref": "#/definitions/latitude" }
+					]
+				},
+				"title": { "type": "string" },
+				"type": { "type": "string" }
+			}
+		 }
+	],
 	"definitions": {
 		"actor": {
 			"type": "object",
@@ -78,10 +72,38 @@
 		},
 		"placename": {
 			"type": "object",
+			"allOf": [
+				{ "$ref": "#/definitions/pleiades_item" }
+			]
+		},
+		"pleiades_item": {
+			"title": "Pleiades Item",
+			"description": "A class definition that comprises all the fields common to Pleiades places, names, and locations.",
+			"type": "object",
 			"properties": {
+				"citation": { "type": "string" },
 				"contributors": { "$ref": "#definitions/actors" },
-				"creators": { "$ref": "#definitions/actors" }
-			}
+				"creators": { "$ref": "#definitions/actors" },				
+				"description": { "type": "string" },
+				"details": { "type": "string" },
+				"history": { "type": "array" },
+				"id": { "type": "string" },
+				"provenance": { "type": "string" },
+				"references": { "type": "array" },
+				"uri": { "type": "string" }
+			},
+			"required": [
+				"citation",
+				"contributors",
+				"creators",
+				"description",
+				"details",
+				"history",
+				"id",
+				"provenance",
+				"references",
+				"uri"
+			]
 		}
 	}
 }
