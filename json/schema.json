@@ -35,6 +35,9 @@
 					"minimum": -90.0
 				}
 			]
+		},
+		"citation": {
+			"type": "string"
 		}
 	}
 }
