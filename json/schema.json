@@ -32,7 +32,16 @@
 		"provenance": { "type": "string" },
 		"references": { "type": "array" },
 		"reprPoint": { 
-			"type": "array" },
+			"title": "representative point",
+			"description": "centroid or other generalized representation of features: longitude, latitude",
+			"type": "array",
+			"minItems": 2,
+			"maxItems": 2,
+			"items": [
+				{ "$ref": "#/definitions/longitude" },
+				{ "$ref": "#/definitions/latitude" }
+			]
+		},
 		"title": { "type": "string" },
 		"type": { "type": "string" },
 		"uri": { "type": "string" }
