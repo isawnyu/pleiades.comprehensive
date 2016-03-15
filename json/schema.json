@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/schema#",
 	"title": "Pleiades Project JSON Export Schema",
-	"description": "Used to validate JSON exports from the Pleiades gazetteer of ancient places",
+	"description": "JSON serialization of a Pleiades 'place' object.",
 	"type": "object",
 	"allOf": [
 		{ "$ref": "#/definitions/pleiades_item" },
@@ -82,6 +82,7 @@
 			"minimum": -180.0
 		},
 		"placename": {
+			"description": "JSON serialization of a Pleiades 'name' object.",
 			"type": "object",
 			"allOf": [
 				{ "$ref": "#/definitions/pleiades_item" },
