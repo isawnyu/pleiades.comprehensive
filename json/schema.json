@@ -11,30 +11,10 @@
 			"minItems": 4,
 			"maxItems": 4,
 			"items": [
-				{ 
-					"id": "longitude_1",
-					"type": "number",
-					"maximum": 180.0,
-					"minimum": -180.0
-				},
-				{ 
-					"id": "latitude_1",
-					"type": "number",
-					"maximum": 90.0,
-					"minimum": -90.0
-				},
-				{ 
-					"id": "longitude_2",
-					"type": "number",
-					"maximum": 180.0,
-					"minimum": -180.0
-				},
-				{ 
-					"id": "latitude_2",
-					"type": "number",
-					"maximum": 90.0,
-					"minimum": -90.0
-				}
+				{ "$ref": "#/definitions/longitude" },
+				{ "$ref": "#/definitions/latitude" },
+				{ "$ref": "#/definitions/longitude" },
+				{ "$ref": "#/definitions/latitude" }
 			]
 		},
 		"citation": { "type": "string" },
@@ -54,5 +34,18 @@
 		"title": { "type": "string" },
 		"type": { "type": "string" },
 		"uri": { "type": "string" }
+	},
+	"definitions": {
+		"latitude": {
+			"type": "number",
+			"maximum": 90.0,
+			"minimum": -90.0
+		},
+		"longitude": {
+			"type": "number",
+			"maximum": 180.0,
+			"minimum": -180.0
+		}
+
 	}
 }
