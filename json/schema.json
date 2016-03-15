@@ -41,9 +41,20 @@
 					]
 				},
 				"title": { "type": "string" },
-				"type": { "type": "string" }
-			}
-		 }
+				"type": { 
+					"type": "string",
+					"enum": ["FeatureCollection"]
+				}
+			},
+			"required": [
+				"connectsWith",
+				"features",
+				"names",
+				"place_types",
+				"title",
+				"type"
+			]
+		}
 	],
 	"definitions": {
 		"actor": {
