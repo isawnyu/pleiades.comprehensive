@@ -20,8 +20,14 @@
 		},
 		"citation": { "type": "string" },
 		"connectsWith": { "type": "array" },
-		"contributors": { "type": "array" },
-		"creators": { "type": "array" },
+		"contributors": { 
+			"type": "array",
+			"items": [ { "$ref": "#/definitions/actor" } ]
+		},
+		"creators": { 
+			"type": "array",
+			"items": [ { "$ref": "#/definitions/actor" } ]
+		},
 		"description": { "type": "string" },
 		"details": { "type": "string" },
 		"features": { "type": "array" },
@@ -56,7 +62,16 @@
 			"type": "number",
 			"maximum": 180.0,
 			"minimum": -180.0
+		},
+		"actor": {
+			"type": "object",
+			"properties": {
+				"name": { "type": "string"},
+				"username": { "type": "string"},
+				"orcid": { "type": "string"},
+				"viaf": { "type": "string"}
+			},
+			"required": [ "name" ]
 		}
-
 	}
 }
