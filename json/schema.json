@@ -85,7 +85,7 @@
 			"properties": {
 				"comment": { "type": "string" },
 				"modified": { "type": "string" },
-				"principal": { "type": "string" }
+				"principal": { "$ref": "#/definitions/actor" }
 			}
 		},
 		"latitude": {

@@ -66,12 +66,18 @@
     {
       "comment": "edited description, added references and cnnxn",
       "modified": "2013-05-02T18:45:23Z",
-      "principal": "jbecker"
+      "principal": {
+        "name": "Jeffery Becker",
+        "username": "jbecker"
+      }
     },
     {
       "comment": "Global migration and reindexing of citations and provenance, February 2012",
       "modified": "2012-02-15T02:45:59Z",
-      "principal": "admin"
+      "principal": {
+        "name": "Administrator",
+        "username": "admin"
+      }
     }
   ],
   "id": "197342",
