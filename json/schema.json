@@ -172,7 +172,10 @@
 				"id": { "type": "string" },
 				"provenance": { "type": "string" },
 				"references": { "type": "array" },
-				"uri": { "type": "string" }
+				"uri": { 
+					"type": "string",
+					"format": "uri"
+				}
 			},
 			"required": [
 				"citation",
