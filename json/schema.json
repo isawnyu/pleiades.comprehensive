@@ -23,7 +23,7 @@
 				"connectsWith": { 
 					"type": "array",
 					"items": [
-						{ "type": "string" }
+						{ "$ref": "#/definitions/numeric-string" }
 					] 
 				},
 				"features": { 
@@ -117,6 +117,10 @@
 			"type": "number",
 			"maximum": 180.0,
 			"minimum": -180.0
+		},
+		"numeric-string": {
+			"type": "string",
+			"pattern": "^[0-9]+$"
 		},
 		"placename": {
 			"description": "JSON serialization of a Pleiades 'name' object.",
