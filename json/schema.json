@@ -76,6 +76,18 @@
 			"type": "array",
 			"items": [ { "$ref": "#/definitions/actor" } ]
 		},
+		"history": {
+			"type": "array",
+			"items": [ { "$ref": "#/definitions/history_event" } ]
+		},
+		"history_event": {
+			"type": "object",
+			"properties": {
+				"comment": { "type": "string" },
+				"modified": { "type": "string" },
+				"principal": { "type": "string" }
+			}
+		},
 		"latitude": {
 			"type": "number",
 			"maximum": 90.0,
@@ -154,7 +166,7 @@
 				"creators": { "$ref": "#definitions/actors" },				
 				"description": { "type": "string" },
 				"details": { "type": "string" },
-				"history": { "type": "array" },
+				"history": { "$ref": "#definitions/history" },
 				"id": { "type": "string" },
 				"provenance": { "type": "string" },
 				"references": { "type": "array" },
