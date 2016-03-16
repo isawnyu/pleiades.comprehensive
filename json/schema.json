@@ -106,16 +106,28 @@
 				{ "$ref": "#/definitions/pleiades_item" },
 				{ 
 					"properties": {
-						"association_certainty": { "type": "string" },
+						"association_certainty": { 
+							"type": "string",
+							"enum": ["certain", "less-certain", "uncertain"] 
+						},
 						"attested": { "type": "string" },
 						"during": { "type": "array" },
 						"end_date": { "type": "string" },
 						"language": { "type": "string" },
-						"name_type": { "type": "string" },
+						"name_type": { 
+							"type": "string",
+							"enum": ["unknown", "undefined", "geographic", "ethnic"]
+						},
 						"romanized": { "type": "string" },
 						"start_date": { "type": "string" },
-						"transcription_accuracy": { "type": "string" },
-						"transcription_completeness": { "type": "string" }
+						"transcription_accuracy": { 
+							"type": "string",
+							"enum": ["accurate", "false", "inaccurate"]
+						},
+						"transcription_completeness": { 
+							"type": "string",
+							"enum": ["reconstructable", "non-reconstructable", "complete"]
+						}
 					},
 					"required": [
 						"association_certainty",
