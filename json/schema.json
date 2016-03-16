@@ -20,7 +20,12 @@
 						{ "$ref": "#/definitions/latitude" }
 					]
 				},
-				"connectsWith": { "type": "array" },
+				"connectsWith": { 
+					"type": "array",
+					"items": [
+						{ "type": "string" }
+					] 
+				},
 				"features": { 
 					"type": "array",
 					"items": [
