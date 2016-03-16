@@ -37,6 +37,31 @@
         "1004"
     ],
     "description": "Ladesta (modern Lastovo) is a part of ancient Liburnia in the Adriatic Sea.",
+    "contributors": [
+        { 
+            "name": "R. Talbert",
+            "viaf": "59162760"
+        },
+        { 
+            "name": "Sean Gillies",
+            "username": "sgillies",
+            "uri": "https://sgillies.net/"
+        },
+        {
+            "name": "Tom Elliott",
+            "username": "thomase",
+            "orcid": "0000-0002-4114-6677",
+            "viaf": "309842724",
+            "uri": "http://www.paregorios.org/"
+        },
+        {
+            "name": "Jeffrey Becker",
+            "username": "jbecker",
+            "viaf": "170222737",
+            "orcid": "0000-0001-8759-3774"
+
+        }
+    ],
     "features": [
         {
             "geometry": {
