@@ -62,6 +62,14 @@
 
         }
     ],
+    "creators": [
+        {
+            "name": "M. Šašel Kos"
+        },
+        {
+            "name": "P. Kos"
+        }
+    ],
     "features": [
         {
             "geometry": {
