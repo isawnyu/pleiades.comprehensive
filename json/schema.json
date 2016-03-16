@@ -84,7 +84,9 @@
 			"type": "object",
 			"properties": {
 				"comment": { "type": "string" },
-				"modified": { "type": "string" },
+				"modified": { 
+					"type": "string",
+					"format": "date-time" },
 				"principal": { "$ref": "#/definitions/actor" }
 			}
 		},
