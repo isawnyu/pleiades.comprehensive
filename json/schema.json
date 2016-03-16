@@ -72,7 +72,7 @@
 			"properties": {
 				"name": { "type": "string"},
 				"username": { "type": "string"},
-				"orcid": { "type": "string"},
+				"orcid": { "$ref": "#/definitions/isni-string" },
 				"viaf": { "type": "string"}
 			},
 			"required": [ "name" ]
@@ -94,6 +94,12 @@
 					"format": "date-time" },
 				"principal": { "$ref": "#/definitions/actor" }
 			}
+		},
+		"isni-string": {
+			"title": "ISNI String",
+			"description": "String whose contents conform to ISO 27729.",
+			"type": "string",
+			"pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$"
 		},
 		"latitude": {
 			"type": "number",
