@@ -73,7 +73,7 @@
 				"name": { "type": "string"},
 				"username": { "type": "string"},
 				"orcid": { "$ref": "#/definitions/isni-string" },
-				"viaf": { "type": "string"}
+				"viaf": { "$ref": "#/definitions/numeric-string" }
 			},
 			"required": [ "name" ]
 		},
