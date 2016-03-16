@@ -1,0 +1,83 @@
+{
+  "description": "Ladesta (modern Lastovo) is a part of ancient Liburnia in the Adriatic Sea.",
+  "connectsWith": [
+    "1004",
+    "1004"
+  ],
+  "reprPoint": [
+    16.8224041,
+    42.7657037
+  ],
+  "names": [
+    "Λάδεστα",
+    "Λάδεστον",
+    "Lastovo",
+    "Λαδεστανός"
+  ],
+  "id": "197342",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8224041,
+          42.7657037
+        ]
+      },
+      "type": "Feature",
+      "id": "location-of-Ladesta-Ins",
+      "properties": {
+        "snippet": "Island, ; AD 1700 - AD 2100",
+        "link": "http://pleiades.jazkarta.com/places/197342/location-of-Ladesta-Ins",
+        "description": "Location based on OpenStreetMap",
+        "location_precision": "precise",
+        "title": "location of Ladesta Ins."
+      }
+    }
+  ],
+  "recent_changes": [
+    {
+      "modified": "2016-02-08T11:02:01Z",
+      "principal": "thomase"
+    },
+    {
+      "modified": "2013-05-02T18:45:23Z",
+      "principal": "jbecker"
+    }
+  ],
+  "title": "Ladesta (island)",
+  "@context": {
+    "features": "_:n3",
+    "Polygon": "http://geovocab.org/geometry#Polygon",
+    "Feature": "http://geovocab.org/spatial#Feature",
+    "location_precision": "_:n7",
+    "names": "_:n9",
+    "MultiLineString": "http://geovocab.org/geometry#MultiLineString",
+    "id": "@id",
+    "MultiPolygon": "http://geovocab.org/geometry#MultiPolygon",
+    "recent_changes": "_:n10",
+    "title": "http://purl.org/dc/terms/title",
+    "coordinates": "_:n5",
+    "snippet": "http://purl.org/dc/terms/abstract",
+    "type": "@type",
+    "description": "http://purl.org/dc/terms/description",
+    "connectsWith": "_:n8",
+    "reprPoint": "_:n11",
+    "link": "_:n6",
+    "bbox": "http://geovocab.org/geometry#bbox",
+    "properties": "_:n4",
+    "MultiPoint": "http://geovocab.org/geometry#MultiPoint",
+    "Point": "http://geovocab.org/geometry#Point",
+    "geometry": "http://geovocab.org/geometry#geometry",
+    "FeatureCollection": "_:n1",
+    "GeometryCollection": "http://geovocab.org/geometry#GeometryCollection",
+    "LineString": "http://geovocab.org/geometry#LineString"
+  },
+  "type": "FeatureCollection",
+  "bbox": [
+    16.8224041,
+    42.7657037,
+    16.8224041,
+    42.7657037
+  ]
+}
