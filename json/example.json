@@ -161,7 +161,24 @@
                     "name": "P. Kos"
                 }
             ],
-            "description": "Ancient name of Lastovo island, according to Stephanus of Byzantium (after Theopompus). Dates after BAtlas."            
+            "description": "Ancient name of Lastovo island, according to Stephanus of Byzantium (after Theopompus). Dates after BAtlas.",
+            "history": [
+                {
+                    "comment": "Greek orthography and language, evidence citation, descripton",
+                    "modified": "20160208T0544",
+                    "principal": { "name": "Tom Elliott", "username": "thomase" }
+                },
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "20120214T2145",
+                    "principal": { "name": "Administrator", "username": "admin" }
+                },
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "20120214T1926",
+                    "principal": { "name": "Administrator", "username": "admin" }
+                }
+            ]
         }        
     ],
     "place_types": [
