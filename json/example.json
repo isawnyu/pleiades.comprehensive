@@ -134,9 +134,26 @@
         {
             "association_certainty": "certain",
             "attested": "\u039b\u03ac\u03b4\u03b5\u03c3\u03c4\u03b1",            
-            "citation": "Šašel Kos, M., P. Kos, R. Talbert, S. Gillies, T. Elliott. \"Places: 197342, s.v. \"Ladesta\". Pleiades. <http://pleiades.stoa.org/places/197342/ladesta> [Accessed: March 16, 2016 2:52 pm]"
-            }
-        
+            "citation": "Šašel Kos, M., P. Kos, R. Talbert, S. Gillies, T. Elliott. \"Places: 197342, s.v. \"Ladesta\". Pleiades. <http://pleiades.stoa.org/places/197342/ladesta> [Accessed: March 16, 2016 2:52 pm]",
+            "contributors": [
+                { 
+                    "name": "R. Talbert",
+                    "viaf": "59162760"
+                },
+                { 
+                    "name": "Sean Gillies",
+                    "username": "sgillies",
+                    "uri": "https://sgillies.net/"
+                },
+                {
+                    "name": "Tom Elliott",
+                    "username": "thomase",
+                    "orcid": "0000-0002-4114-6677",
+                    "viaf": "309842724",
+                    "uri": "http://www.paregorios.org/"
+                }
+            ]
+        }        
     ],
     "place_types": [
         "island"
