@@ -36,7 +36,6 @@
     "connectsWith": [
         "1004"
     ],
-    "description": "Ladesta (modern Lastovo) is a part of ancient Liburnia in the Adriatic Sea.",
     "contributors": [
         { 
             "name": "R. Talbert",
@@ -70,6 +69,8 @@
             "name": "P. Kos"
         }
     ],
+    "description": "Ladesta (modern Lastovo) is a part of ancient Liburnia in the Adriatic Sea.",    
+    "details": "The Barrington Atlas Directory notes: island",
     "features": [
         {
             "geometry": {
@@ -79,7 +80,7 @@
                 ],
                 "type": "Point"
             },
-            "id": "location-of-Ladesta-Ins",
+            "id": "197342/location-of-Ladesta-Ins",
             "properties": {
                 "description": "Location based on OpenStreetMap",
                 "link": "http://pleiades.jazkarta.com/places/197342/location-of-Ladesta-Ins",
@@ -90,6 +91,44 @@
             "type": "Feature"
         }
     ],
+    "history": [
+        {
+            "comment": "title, description, change reason for wikipedia citation from \"see further\" to \"see also\" since the article is principally about the modern island (though includes history discussion).",
+            "modified": "20160208T0602",
+            "principal": { "name": "Tom Elliott", "username": "thomase" }
+        },
+        {
+            "comment": "Baseline created",
+            "modified": "20160208T0559",
+            "principal": { "name": "Jeffrey Becker", "username": "jbecker" }
+        },
+        {
+            "comment": "edited description, added references and cnnxn",
+            "modified": "20130502T1443",
+            "principal": { "name": "Jeffrey Becker", "username": "jbecker" }
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "20120214T2145",
+            "principal": { "name": "Administrator", "username": "admin" }
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "20120214T1926",
+            "principal": { "name": "Administrator", "username": "admin" }
+        },
+        {
+            "comment": "Finding islands by their titles and setting feature types",
+            "modified": "20110719T1502",
+            "principal": { "name": "Sean Gillies", "username": "sgillies" }
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "20110114T0203",
+            "principal": { "name": "Sean Gillies", "username": "sgillies" }
+        }
+
+    ],
     "id": "197342",
     "names": [
         "\u039b\u03ac\u03b4\u03b5\u03c3\u03c4\u03b1",
@@ -97,6 +136,7 @@
         "Lastovo",
         "\u039b\u03b1\u03b4\u03b5\u03c3\u03c4\u03b1\u03bd\u03cc\u03c2"
     ],
+    "provenance": "Barrington Atlas: BAtlas 27 B2 Consabura/Consabrum",
     "recent_changes": [
         {
             "modified": "2016-02-08T11:02:01Z",
@@ -107,10 +147,38 @@
             "principal": "jbecker"
         }
     ],
+    "references": [
+        {
+            "reference_type": "evidence",
+            "work_uri": "http://latin.packhum.org/loc/978/1/226/417-425",
+            "short_citation": "Plin. HN (Mayhoff: PHI) 3.25.7"
+        },
+        {
+            "reference_type": "see_further",
+            "bibliography_uri": "http://openlibrary.org/works/OL8327792W",
+            "short_citation": "BAtlas 27 B2 Consabura/Consabrum"
+        },
+        {
+            "reference_type": "see_further",
+            "bibliography_uri": "http://atlantides.org/bibliography/t.html#Tovar-1989",
+            "short_citation": "BAtlas 27 B2 Consabura/Consabrum"
+        },
+        {
+            "reference_type": "see_further",
+            "work_uri": "http://referenceworks.brillonline.com/entries/brill-s-new-pauly/consabura-e304080",
+            "short_citation": "New Pauly, Consabura"
+        },
+        {
+            "reference_type": "see_further",
+            "work_uri": "http://www.trismegistos.org/place/27183",
+            "short_citation": "TM GEO ID 27183"
+        }
+    ],
     "reprPoint": [
         16.8224041,
         42.7657037
     ],
     "title": "Ladesta (island)",
-    "type": "FeatureCollection"
+    "type": "FeatureCollection",
+    "uri": "http://pleiades.stoa.org/places/197342"
 }

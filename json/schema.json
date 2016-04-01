@@ -32,6 +32,7 @@
 						{ "$ref": "#/definitions/location" }
 					] 
 				},
+				"id": { "$ref": "#/definitions/numeric-string" },
 				"names": { 
 					"type": "array",
 					"items": [
@@ -71,15 +72,25 @@
 			"type": "object",
 			"properties": {
 				"name": { "type": "string"},
-				"username": { "type": "string"},
+				"username": { "$ref": "#/definitions/ascii-string-lc-no-ws" },
 				"orcid": { "$ref": "#/definitions/isni-string" },
-				"viaf": { "$ref": "#/definitions/numeric-string" }
+				"viaf": { "$ref": "#/definitions/numeric-string" },
+				"uri": {
+					"type": "string",
+					"format": "uri"
+				}
 			},
 			"required": [ "name" ]
 		},
 		"actors": {
 			"type": "array",
 			"items": [ { "$ref": "#/definitions/actor" } ]
+		},
+		"ascii-string-lc-no-ws": {
+			"title": "ASCII String (lower-case, no whitespace)",
+			"description": "any non-zero-length string containing only a combination of the characters 'a' - 'z'",
+			"type": "string",
+			"pattern": "^[a-z]+$"
 		},
 		"history": {
 			"type": "array",
@@ -102,6 +113,7 @@
 			"pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$"
 		},
 		"latitude": {
+			"description": "latitude in signed decimal degrees; WGS84 spheroid assumed",
 			"type": "number",
 			"maximum": 90.0,
 			"minimum": -90.0
@@ -111,7 +123,7 @@
 			"type": "object",
 			"properties": {
 				"geometry": { "type": "object" },
-				"id": { "type": "string" },
+				"id": { "$ref": "#/definitions/pleiades_id_nld" },
 				"properties": { "type": "object" },
 				"type": { 
 					"type": "string",
@@ -120,11 +132,14 @@
 			}
 		},
 		"longitude": {
+			"description": "longitude in signed decimal degrees; WGS84 spheroid assumed",
 			"type": "number",
 			"maximum": 180.0,
 			"minimum": -180.0
 		},
 		"numeric-string": {
+			"title": "Numeric String",
+			"description": "any non-zero-length string containing only a combination of the numeric characters '1' - '9'",
 			"type": "string",
 			"pattern": "^[0-9]+$"
 		},
@@ -142,6 +157,7 @@
 						"attested": { "type": "string" },
 						"during": { "type": "array" },
 						"end_date": { "type": "string" },
+						"id": { "$ref": "#/definitions/pleiades_id_nld" },
 						"language": { "type": "string" },
 						"name_type": { 
 							"type": "string",
@@ -173,18 +189,22 @@
 				}
 			]
 		},
+		"pleiades_id_nld": {
+			"title": "Pleiades name and location ID format.",
+			"type": "string",
+			"pattern": "^[0-9]+\/[a-z0-9A-Z\\-]+$"
+		},
 		"pleiades_item": {
 			"title": "Pleiades Item",
 			"description": "A class definition that comprises all the fields common to Pleiades places, names, and locations.",
 			"type": "object",
 			"properties": {
 				"citation": { "type": "string" },
-				"contributors": { "$ref": "#definitions/actors" },
-				"creators": { "$ref": "#definitions/actors" },				
+				"contributors": { "$ref": "#/definitions/actors" },
+				"creators": { "$ref": "#/definitions/actors" },				
 				"description": { "type": "string" },
 				"details": { "type": "string" },
-				"history": { "$ref": "#definitions/history" },
-				"id": { "type": "string" },
+				"history": { "$ref": "#/definitions/history" },
 				"provenance": { "type": "string" },
 				"references": { "type": "array" },
 				"uri": { 
