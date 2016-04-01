@@ -152,7 +152,15 @@
                     "viaf": "309842724",
                     "uri": "http://www.paregorios.org/"
                 }
-            ]
+            ],
+            "creators": [
+                {
+                    "name": "M. Šašel Kos"
+                },
+                {
+                    "name": "P. Kos"
+                }
+            ]            
         }        
     ],
     "place_types": [
