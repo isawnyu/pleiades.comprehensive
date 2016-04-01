@@ -131,10 +131,15 @@
     ],
     "id": "197342",
     "names": [
-        "\u039b\u03ac\u03b4\u03b5\u03c3\u03c4\u03b1",
-        "\u039b\u03ac\u03b4\u03b5\u03c3\u03c4\u03bf\u03bd",
-        "Lastovo",
-        "\u039b\u03b1\u03b4\u03b5\u03c3\u03c4\u03b1\u03bd\u03cc\u03c2"
+        {
+            "association_certainty": "certain",
+            "attested": "\u039b\u03ac\u03b4\u03b5\u03c3\u03c4\u03b1",            
+            "citation": "Šašel Kos, M., P. Kos, R. Talbert, S. Gillies, T. Elliott. \"Places: 197342, s.v. \"Ladesta\". Pleiades. <http://pleiades.stoa.org/places/197342/ladesta> [Accessed: March 16, 2016 2:52 pm]"
+            }
+        
+    ],
+    "place_types": [
+        "island"
     ],
     "provenance": "Barrington Atlas: BAtlas 27 B2 Consabura/Consabrum",
     "recent_changes": [
