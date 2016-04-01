@@ -179,7 +179,8 @@
                     "principal": { "name": "Administrator", "username": "admin" }
                 }
             ],
-            "id": "197342/ladesta"
+            "id": "197342/ladesta",
+            "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins."
         }        
     ],
     "place_types": [
