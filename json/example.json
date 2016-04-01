@@ -162,6 +162,9 @@
                 }
             ],
             "description": "Ancient name of Lastovo island, according to Stephanus of Byzantium (after Theopompus). Dates after BAtlas.",
+            "during": [
+            ],
+            "end_date": "",            
             "history": [
                 {
                     "comment": "Greek orthography and language, evidence citation, descripton",
@@ -180,6 +183,8 @@
                 }
             ],
             "id": "197342/ladesta",
+            "language": "",
+            "name_type": "geographic",
             "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins.",
             "references": [
                 {
@@ -187,7 +192,12 @@
                     "work_uri": "https://archive.org/stream/stephanibyzanti00meingoog#page/n416",
                     "short_citation": "StByz (Meineke: archive.org), Λάδεστα"
                 }
-            ]
+            ],
+            "romanized": "",
+            "start_date": "",
+            "transcription_accuracy": "accurate",
+            "transcription_completeness": "complete",   
+            "uri": "http://pleiades.stoa.org/places/197342/ladesta"
         }        
     ],
     "place_types": [
