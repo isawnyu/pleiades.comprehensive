@@ -180,7 +180,14 @@
                 }
             ],
             "id": "197342/ladesta",
-            "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins."
+            "provenance": "Barrington Atlas: BAtlas 20 D7 Ladesta Ins.",
+            "references": [
+                {
+                    "reference_type": "evidence",
+                    "work_uri": "https://archive.org/stream/stephanibyzanti00meingoog#page/n416",
+                    "short_citation": "StByz (Meineke: archive.org), Λάδεστα"
+                }
+            ]
         }        
     ],
     "place_types": [
