@@ -7,6 +7,28 @@
 		{ "$ref": "#/definitions/pleiades_item" },
 		{ 
 			"properties": {
+				"@context": {
+					"type": "object",
+					"properties": {
+						"geojson": { "enum": ["http:\/\/ld.geojson.org/vocab#"] },
+						"Feature": { "enum": ["geojson:Feature"] },
+						"FeatureCollection": { "enum": ["geojson:FeatureCollection"] },
+						"GeometryCollection": { "enum": ["geojson:GeometryCollection"] },
+						"LineString": { "enum": ["geojson:LineString"] },
+						"MultiLineString": { "enum": ["geojson:MultiLineString"] },
+						"MultiPoint": { "enum": ["geojson:MultiPoint"] },
+						"MultiPolygon": { "enum": ["geojson:MultiPolygon"] },
+						"Point": { "enum": ["geojson:Point"] },
+						"Polygon": { "enum": ["geojson:Polygon"] },
+						"bbox": {
+							"type": "object",
+							"properties": {
+								"@container": { "enum": ["@list"] },
+								"@id": { "enum": ["geojson:bbox"] }
+							}
+						}
+					}
+				},
 				"bbox": {
 					"title": "bounding box",
 					"description": "southwest longitude, southwest latitude, northeast longitude, northeast latitude",
