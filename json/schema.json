@@ -180,7 +180,10 @@
 						"during": { "type": "array" },
 						"end_date": { "$ref": "#/definitions/year-string" },
 						"id": { "$ref": "#/definitions/pleiades_id_nld" },
-						"language": { "type": "string" },
+						"language": { 
+							"type": "string",
+							"pattern": "^[a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,8})*$"
+						 },
 						"name_type": { 
 							"type": "string",
 							"enum": ["unknown", "undefined", "geographic", "ethnic"]
