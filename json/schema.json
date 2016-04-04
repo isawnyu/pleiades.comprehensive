@@ -178,7 +178,7 @@
 						},
 						"attested": { "type": "string" },
 						"during": { "type": "array" },
-						"end_date": { "type": "string" },
+						"end_date": { "$ref": "#/definitions/year-string" },
 						"id": { "$ref": "#/definitions/pleiades_id_nld" },
 						"language": { "type": "string" },
 						"name_type": { 
@@ -186,7 +186,7 @@
 							"enum": ["unknown", "undefined", "geographic", "ethnic"]
 						},
 						"romanized": { "type": "string" },
-						"start_date": { "type": "string" },
+						"start_date": { "$ref": "#/definitions/year-string" },
 						"transcription_accuracy": { 
 							"type": "string",
 							"enum": ["accurate", "false", "inaccurate"]
@@ -245,6 +245,10 @@
 				"references",
 				"uri"
 			]
+		},
+		"year-string": {
+			"type": "string",
+			"pattern": "^-?[1-9]\\d*$"
 		}
 	}
 }
