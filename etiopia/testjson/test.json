@@ -1,12 +1,45 @@
 
-            {
+            {"@context": {
+            "geojson": "http://ld.geojson.org/vocab#",
+            "Feature": "geojson:Feature",
+            "FeatureCollection": "geojson:FeatureCollection",
+            "GeometryCollection": "geojson:GeometryCollection",
+            "LineString": "geojson:LineString",
+            "MultiLineString": "geojson:MultiLineString",
+            "MultiPoint": "geojson:MultiPoint",
+            "MultiPolygon": "geojson:MultiPolygon",
+            "Point": "geojson:Point",
+            "Polygon": "geojson:Polygon",
+            "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+            },
+            "connectsWith": "_:n8",
+            "coordinates": "geojson:coordinates",
+            "description": "http://purl.org/dc/terms/description",
+            "features": {
+            "@container": "@set",
+            "@id": "geojson:features"
+            },
+            "geometry": "geojson:geometry",
+            "id": "@id",
+            "link": "_:n6",
+            "location_precision": "_:n7",
+            "names": "_:n9",
+            "properties": "geojson:properties",
+            "recent_changes": "_:n10",
+            "reprPoint": "_:n11",
+            "snippet": "http://purl.org/dc/terms/abstract",
+            "title": "http://purl.org/dc/terms/title",
+            "type": "@type"
+            },
             "bbox": [
-            39.612512, 
-            13.967767,
-            39.612512,
-            13.967767
+             
+            13.967767,39.612512,
+            
+            13.967767, 39.612512
             ],
-            "citation": " Location based on Encyclopaedia Aethiopica, from the Beta maṣāḥǝft: Manuscripts of Ethiopia and Eritrea project",
+            "citation": "Location based on Encyclopaedia Aethiopica, from the Beta maṣāḥǝft: Manuscripts of Ethiopia and Eritrea project",
             "connectsWith": [
             "39274",
              "Tǝgray",
@@ -14,28 +47,24 @@
             ],
             "creators": [
             {
-            "name": "Denis Nosnitsin",
-            "date": "2012-03-01"
+            "name": "Denis Nosnitsin"
             }
             ], 
             "contributors": [
                 
                 {
-                "name": "Denis Nosnitsin",
-                "date": "2012-03-01"
+                "name": "Denis Nosnitsin"
                 },
                 
                 {
-                "name": "Susanne Hummel",
-                "date": "2015-04-21"
+                "name": "Susanne Hummel"
                 },
                 
                 {
-                "name": "Pietro Maria Liuzzo",
-                "date": "2016-04-28"
+                "name": "Pietro Maria Liuzzo"
                 }
             ],
-            "details": "Däbr.",
+             "details": "Däbr.",
             "features": [
             {
             "geometry": {    "coordinates": [13.967767, 
@@ -56,32 +85,25 @@
             "history": [
             {
             "comment": "Mapped to Json from mycore xml",
-            "modified": "2016-10-28T15:01:17.538+02:00",
+            "modified": "2016-10-28T15:23:50.026+02:00",
             "principal": "pliuzzo"
             }
             ],
             "id" :"INS0208BMQM",
-            "names": [
-            
-            ],
-            
+           
             "place_types": [
-            "church monastery"
+            "church","monastery"
             ],
-            "references": [
-            {
-            "detail": "Beta maṣāḥǝft: Manuscripts of Ethiopia and Eritrea  (Schriftkultur des christlichen Äthiopiens: eine multimediale Forschungsumgebung)",
-            "reason": "citesForInformation"
-            }
-            ],
+            "provenance": "Encyclopedia Aethiopica",
+            
             
             "reprPoint": [
-            39.612512,
-            13.967767
+             13.967767,39.612512
+           
             ],
             "title": "Bet Muḵaʿ Mikaʾel",
             "type": "FeatureCollection",
             "uri": "http://betamasaheft.aai.uni-hamburg.de/institutions/INS0208BMQM"
-            };
-
+            }
+            
             
